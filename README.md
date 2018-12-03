@@ -40,8 +40,8 @@ In other words, concurrency is embedded inside the problem space.
 For instance, consider a computer game.
 There is no clear way to have parallelism because computer game requires user input and unless one is provided, no execution is possible!
 
-Usually, in the problem space, there are a huge blob of concurrent functions that have no clear way to be parallelized.
-Then there is a subset that are parallelizable.
+Usually, in the problem space, there is a huge blob of concurrent functions that have no clear way to parallelism.
+Then there is a subset that can be turned into parallel executions.
 Once we have identified this subset of the problem we can then use many parallelism algorithms that are available.
 
 ### OpenMP
@@ -51,3 +51,16 @@ The structure is usually like
 
     #pragma omp construct [clause [clause ...] ...]
     
+    
+
+## SMP AND NUMA
+
+
+# FALSE SHARING - USE SYNCHRONIZATION
+
+USING PAD TO SOLVE FALSE SHARING
+    
+# SYNCRHONIZATION
+    2. BARRIERS
+    3. MUTUAL EXCLUSION
+
